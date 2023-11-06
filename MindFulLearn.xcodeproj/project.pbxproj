@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		188BF8692AF84D67004757D5 /* MindFulLearnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BF8682AF84D67004757D5 /* MindFulLearnApp.swift */; };
+		188BF86D2AF84D6A004757D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188BF86C2AF84D6A004757D5 /* Assets.xcassets */; };
+		188BF8702AF84D6A004757D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188BF86F2AF84D6A004757D5 /* Preview Assets.xcassets */; };
+		188BF87A2AF84D6A004757D5 /* MindFulLearnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BF8792AF84D6A004757D5 /* MindFulLearnTests.swift */; };
+		188BF8842AF84D6A004757D5 /* MindFulLearnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BF8832AF84D6A004757D5 /* MindFulLearnUITests.swift */; };
+		188BF8862AF84D6A004757D5 /* MindFulLearnUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BF8852AF84D6A004757D5 /* MindFulLearnUITestsLaunchTests.swift */; };
+		188BF8962AF8592D004757D5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BF8952AF8592D004757D5 /* LoginView.swift */; };
+		188BF8982AF85B7E004757D5 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BF8972AF85B7E004757D5 /* SigninView.swift */; };
+		188BF89B2AF862E5004757D5 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 188BF89A2AF862E5004757D5 /* Lottie */; };
+		188BF89D2AF862FF004757D5 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BF89C2AF862FE004757D5 /* WelcomeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		188BF8762AF84D6A004757D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 188BF85D2AF84D67004757D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 188BF8642AF84D67004757D5;
+			remoteInfo = MindFulLearn;
+		};
+		188BF8802AF84D6A004757D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 188BF85D2AF84D67004757D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 188BF8642AF84D67004757D5;
+			remoteInfo = MindFulLearn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		188BF8652AF84D67004757D5 /* MindFulLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindFulLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		188BF8682AF84D67004757D5 /* MindFulLearnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindFulLearnApp.swift; sourceTree = "<group>"; };
+		188BF86C2AF84D6A004757D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		188BF86F2AF84D6A004757D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		188BF8752AF84D6A004757D5 /* MindFulLearnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindFulLearnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		188BF8792AF84D6A004757D5 /* MindFulLearnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindFulLearnTests.swift; sourceTree = "<group>"; };
+		188BF87F2AF84D6A004757D5 /* MindFulLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindFulLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		188BF8832AF84D6A004757D5 /* MindFulLearnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindFulLearnUITests.swift; sourceTree = "<group>"; };
+		188BF8852AF84D6A004757D5 /* MindFulLearnUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindFulLearnUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		188BF8952AF8592D004757D5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		188BF8972AF85B7E004757D5 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
+		188BF89C2AF862FE004757D5 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		188BF8622AF84D67004757D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188BF89B2AF862E5004757D5 /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188BF8722AF84D6A004757D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188BF87C2AF84D6A004757D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		188BF85C2AF84D67004757D5 = {
+			isa = PBXGroup;
+			children = (
+				188BF8942AF858DF004757D5 /* View */,
+				188BF8932AF858C4004757D5 /* ViewModel */,
+				188BF8922AF858B7004757D5 /* Model */,
+				188BF8672AF84D67004757D5 /* MindFulLearn */,
+				188BF8782AF84D6A004757D5 /* MindFulLearnTests */,
+				188BF8822AF84D6A004757D5 /* MindFulLearnUITests */,
+				188BF8662AF84D67004757D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		188BF8662AF84D67004757D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				188BF8652AF84D67004757D5 /* MindFulLearn.app */,
+				188BF8752AF84D6A004757D5 /* MindFulLearnTests.xctest */,
+				188BF87F2AF84D6A004757D5 /* MindFulLearnUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		188BF8672AF84D67004757D5 /* MindFulLearn */ = {
+			isa = PBXGroup;
+			children = (
+				188BF8682AF84D67004757D5 /* MindFulLearnApp.swift */,
+				188BF86C2AF84D6A004757D5 /* Assets.xcassets */,
+				188BF86E2AF84D6A004757D5 /* Preview Content */,
+			);
+			path = MindFulLearn;
+			sourceTree = "<group>";
+		};
+		188BF86E2AF84D6A004757D5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				188BF86F2AF84D6A004757D5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		188BF8782AF84D6A004757D5 /* MindFulLearnTests */ = {
+			isa = PBXGroup;
+			children = (
+				188BF8792AF84D6A004757D5 /* MindFulLearnTests.swift */,
+			);
+			path = MindFulLearnTests;
+			sourceTree = "<group>";
+		};
+		188BF8822AF84D6A004757D5 /* MindFulLearnUITests */ = {
+			isa = PBXGroup;
+			children = (
+				188BF8832AF84D6A004757D5 /* MindFulLearnUITests.swift */,
+				188BF8852AF84D6A004757D5 /* MindFulLearnUITestsLaunchTests.swift */,
+			);
+			path = MindFulLearnUITests;
+			sourceTree = "<group>";
+		};
+		188BF8922AF858B7004757D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		188BF8932AF858C4004757D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		188BF8942AF858DF004757D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				188BF8952AF8592D004757D5 /* LoginView.swift */,
+				188BF8972AF85B7E004757D5 /* SigninView.swift */,
+				188BF89C2AF862FE004757D5 /* WelcomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		188BF8642AF84D67004757D5 /* MindFulLearn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188BF8892AF84D6A004757D5 /* Build configuration list for PBXNativeTarget "MindFulLearn" */;
+			buildPhases = (
+				188BF8612AF84D67004757D5 /* Sources */,
+				188BF8622AF84D67004757D5 /* Frameworks */,
+				188BF8632AF84D67004757D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MindFulLearn;
+			packageProductDependencies = (
+				188BF89A2AF862E5004757D5 /* Lottie */,
+			);
+			productName = MindFulLearn;
+			productReference = 188BF8652AF84D67004757D5 /* MindFulLearn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		188BF8742AF84D6A004757D5 /* MindFulLearnTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188BF88C2AF84D6A004757D5 /* Build configuration list for PBXNativeTarget "MindFulLearnTests" */;
+			buildPhases = (
+				188BF8712AF84D6A004757D5 /* Sources */,
+				188BF8722AF84D6A004757D5 /* Frameworks */,
+				188BF8732AF84D6A004757D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				188BF8772AF84D6A004757D5 /* PBXTargetDependency */,
+			);
+			name = MindFulLearnTests;
+			productName = MindFulLearnTests;
+			productReference = 188BF8752AF84D6A004757D5 /* MindFulLearnTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		188BF87E2AF84D6A004757D5 /* MindFulLearnUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188BF88F2AF84D6A004757D5 /* Build configuration list for PBXNativeTarget "MindFulLearnUITests" */;
+			buildPhases = (
+				188BF87B2AF84D6A004757D5 /* Sources */,
+				188BF87C2AF84D6A004757D5 /* Frameworks */,
+				188BF87D2AF84D6A004757D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				188BF8812AF84D6A004757D5 /* PBXTargetDependency */,
+			);
+			name = MindFulLearnUITests;
+			productName = MindFulLearnUITests;
+			productReference = 188BF87F2AF84D6A004757D5 /* MindFulLearnUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		188BF85D2AF84D67004757D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					188BF8642AF84D67004757D5 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					188BF8742AF84D6A004757D5 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 188BF8642AF84D67004757D5;
+					};
+					188BF87E2AF84D6A004757D5 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 188BF8642AF84D67004757D5;
+					};
+				};
+			};
+			buildConfigurationList = 188BF8602AF84D67004757D5 /* Build configuration list for PBXProject "MindFulLearn" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 188BF85C2AF84D67004757D5;
+			packageReferences = (
+				188BF8992AF862E5004757D5 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
+			productRefGroup = 188BF8662AF84D67004757D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				188BF8642AF84D67004757D5 /* MindFulLearn */,
+				188BF8742AF84D6A004757D5 /* MindFulLearnTests */,
+				188BF87E2AF84D6A004757D5 /* MindFulLearnUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		188BF8632AF84D67004757D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188BF8702AF84D6A004757D5 /* Preview Assets.xcassets in Resources */,
+				188BF86D2AF84D6A004757D5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188BF8732AF84D6A004757D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188BF87D2AF84D6A004757D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		188BF8612AF84D67004757D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188BF8962AF8592D004757D5 /* LoginView.swift in Sources */,
+				188BF8692AF84D67004757D5 /* MindFulLearnApp.swift in Sources */,
+				188BF8982AF85B7E004757D5 /* SigninView.swift in Sources */,
+				188BF89D2AF862FF004757D5 /* WelcomeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188BF8712AF84D6A004757D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188BF87A2AF84D6A004757D5 /* MindFulLearnTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		188BF87B2AF84D6A004757D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188BF8842AF84D6A004757D5 /* MindFulLearnUITests.swift in Sources */,
+				188BF8862AF84D6A004757D5 /* MindFulLearnUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		188BF8772AF84D6A004757D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 188BF8642AF84D67004757D5 /* MindFulLearn */;
+			targetProxy = 188BF8762AF84D6A004757D5 /* PBXContainerItemProxy */;
+		};
+		188BF8812AF84D6A004757D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 188BF8642AF84D67004757D5 /* MindFulLearn */;
+			targetProxy = 188BF8802AF84D6A004757D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		188BF8872AF84D6A004757D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		188BF8882AF84D6A004757D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		188BF88A2AF84D6A004757D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MindFulLearn/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = achraf.MindFulLearn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		188BF88B2AF84D6A004757D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MindFulLearn/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = achraf.MindFulLearn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		188BF88D2AF84D6A004757D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = achraf.MindFulLearnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindFulLearn.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MindFulLearn";
+			};
+			name = Debug;
+		};
+		188BF88E2AF84D6A004757D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = achraf.MindFulLearnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindFulLearn.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MindFulLearn";
+			};
+			name = Release;
+		};
+		188BF8902AF84D6A004757D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = achraf.MindFulLearnUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MindFulLearn;
+			};
+			name = Debug;
+		};
+		188BF8912AF84D6A004757D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = achraf.MindFulLearnUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MindFulLearn;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		188BF8602AF84D67004757D5 /* Build configuration list for PBXProject "MindFulLearn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188BF8872AF84D6A004757D5 /* Debug */,
+				188BF8882AF84D6A004757D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188BF8892AF84D6A004757D5 /* Build configuration list for PBXNativeTarget "MindFulLearn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188BF88A2AF84D6A004757D5 /* Debug */,
+				188BF88B2AF84D6A004757D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188BF88C2AF84D6A004757D5 /* Build configuration list for PBXNativeTarget "MindFulLearnTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188BF88D2AF84D6A004757D5 /* Debug */,
+				188BF88E2AF84D6A004757D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188BF88F2AF84D6A004757D5 /* Build configuration list for PBXNativeTarget "MindFulLearnUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188BF8902AF84D6A004757D5 /* Debug */,
+				188BF8912AF84D6A004757D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		188BF8992AF862E5004757D5 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		188BF89A2AF862E5004757D5 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 188BF8992AF862E5004757D5 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 188BF85D2AF84D67004757D5 /* Project object */;
+}
