@@ -11,7 +11,7 @@ import SwiftUI
 struct MindFulLearnApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView()
         }
     }
 }
