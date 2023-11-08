@@ -7,62 +7,63 @@ struct SignupView: View {
     @State private var email = ""
     @State private var password = ""
     @State private var confirmPassword = ""
-    
+    @State private var selectedRole = "Etudiant" // Default role
+
+    var roles = ["Etudiant", "Tuteur"]
+
     var body: some View {
         VStack {
-            // Top Section
-            ZStack {
-                Color.green
-                    .frame(height: 3 * UIScreen.main.bounds.height / 10)
-                    .ignoresSafeArea()
-                
-                VStack {
-                    Text("Unlock your full potential")
-                        .bold()
-                        .font(.title)
-                        .foregroundColor(.white)
-                        .padding()
-                    
-                    Text("Join today and start your journey")
-                        .foregroundColor(.white)
-                        .padding(.bottom)
-                }
-            }
-            
             // TextFields
-            VStack(spacing: 20) {
+            VStack(spacing: 10) {
                 TextField("First Name", text: $firstName)
                     .padding()
-                    .background(Color.white)
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(10)
-                
+                    .shadow(radius: 5)
+
                 TextField("Last Name", text: $lastName)
                     .padding()
-                    .background(Color.white)
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(10)
-                
+                    .shadow(radius: 5)
+
                 DatePicker("Date of Birth", selection: $dateOfBirth, in: ...Date(), displayedComponents: .date)
                     .padding()
-                    .background(Color.white)
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(10)
-                
+                    .shadow(radius: 5)
+
                 TextField("Email", text: $email)
                     .padding()
-                    .background(Color.white)
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(10)
-                
+                    .shadow(radius: 5)
+
+                Picker("Role", selection: $selectedRole) {
+                    ForEach(roles, id: \.self) {
+                        Text($0)
+                    }
+                }
+                .pickerStyle(SegmentedPickerStyle())
+                .padding()
+                .background(Color.green.opacity(0.1))
+                .cornerRadius(10)
+                .shadow(radius: 5)
+
                 SecureField("Password", text: $password)
                     .padding()
-                    .background(Color.white)
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(10)
-                
+                    .shadow(radius: 5)
+
                 SecureField("Confirm Password", text: $confirmPassword)
                     .padding()
-                    .background(Color.white)
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(10)
+                    .shadow(radius: 5)
             }
             .padding()
-            
+
             // Get Started Button
             Button(action: {
                 // Handle Get Started
@@ -72,14 +73,15 @@ struct SignupView: View {
                     .bold()
                     .frame(maxWidth: .infinity)
                     .padding()
-                    .background(Color.white)
-                    .border(Color.black, width: 1)
+                    .background(Color.green)
                     .cornerRadius(10)
+                    .shadow(radius: 5)
             }
             .padding()
-            
+
             Spacer()
         }
+        .padding()
     }
 }
 
