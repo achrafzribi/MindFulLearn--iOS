@@ -13,42 +13,19 @@ struct SignupView: View {
 
     var body: some View {
         VStack {
+            // Title
+            Text("Create an Account")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .padding(.bottom, 20)
+
             // TextFields
-            VStack(spacing: 10) {
-                TextField("First Name", text: $firstName)
-                    .padding()
-                    .background(Color.green.opacity(0.1))
-                    .cornerRadius(10)
-                    .shadow(radius: 5)
-
-                TextField("Last Name", text: $lastName)
-                    .padding()
-                    .background(Color.green.opacity(0.1))
-                    .cornerRadius(10)
-                    .shadow(radius: 5)
-
-                DatePicker("Date of Birth", selection: $dateOfBirth, in: ...Date(), displayedComponents: .date)
-                    .padding()
-                    .background(Color.green.opacity(0.1))
-                    .cornerRadius(10)
-                    .shadow(radius: 5)
-
-                TextField("Email", text: $email)
-                    .padding()
-                    .background(Color.green.opacity(0.1))
-                    .cornerRadius(10)
-                    .shadow(radius: 5)
-
-                Picker("Role", selection: $selectedRole) {
-                    ForEach(roles, id: \.self) {
-                        Text($0)
-                    }
-                }
-                .pickerStyle(SegmentedPickerStyle())
-                .padding()
-                .background(Color.green.opacity(0.1))
-                .cornerRadius(10)
-                .shadow(radius: 5)
+            VStack(spacing: 15) {
+                CustomTextField(placeholder: "First Name", text: $firstName)
+                CustomTextField(placeholder: "Last Name", text: $lastName)
+                CustomDatePicker(label: "Date of Birth", selectedDate: $dateOfBirth)
+                CustomTextField(placeholder: "Email", text: $email)
+                CustomPicker(label: "Role", selection: $selectedRole, options: roles)
 
                 SecureField("Password", text: $password)
                     .padding()
@@ -69,7 +46,7 @@ struct SignupView: View {
                 // Handle Get Started
             }) {
                 Text("Get Started")
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
                     .bold()
                     .frame(maxWidth: .infinity)
                     .padding()
@@ -88,6 +65,51 @@ struct SignupView: View {
 struct SignupView_Previews: PreviewProvider {
     static var previews: some View {
         SignupView()
+    }
+}
+
+struct CustomTextField: View {
+    var placeholder: String
+    @Binding var text: String
+
+    var body: some View {
+        TextField(placeholder, text: $text)
+            .padding()
+            .background(Color.green.opacity(0.1))
+            .cornerRadius(10)
+            .shadow(radius: 5)
+    }
+}
+
+struct CustomDatePicker: View {
+    var label: String
+    @Binding var selectedDate: Date
+
+    var body: some View {
+        DatePicker(label, selection: $selectedDate, in: ...Date(), displayedComponents: .date)
+            .padding()
+            .background(Color.green.opacity(0.1))
+            .cornerRadius(10)
+            .shadow(radius: 5)
+    }
+}
+
+struct CustomPicker: View {
+    var label: String
+    @Binding var selection: String
+    var options: [String]
+
+    var body: some View {
+        Picker(label, selection: $selection) {
+            ForEach(options, id: \.self) {
+                Text($0)
+            }
+        }
+        .pickerStyle(SegmentedPickerStyle())
+        .padding()
+        .background(Color.green.opacity(0.1))
+        .cornerRadius(10)
+        .shadow(radius: 5)
     }
 }
 

@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1800F34C2AFD20690031C084 /* ModifyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800F34B2AFD20690031C084 /* ModifyProfileView.swift */; };
 		187F2F182AFAA57900AFD891 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F2F172AFAA57900AFD891 /* ForgotPasswordView.swift */; };
 		187F2F1A2AFAA79300AFD891 /* CodeEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F2F192AFAA79300AFD891 /* CodeEmailView.swift */; };
 		187F2F1C2AFAA81600AFD891 /* NewPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F2F1B2AFAA81600AFD891 /* NewPasswordView.swift */; };
+		187F2F242AFC122000AFD891 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F2F232AFC122000AFD891 /* SettingsView.swift */; };
+		187F2F2A2AFC1F2F00AFD891 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F2F292AFC1F2F00AFD891 /* ProfileView.swift */; };
+		187F2F2E2AFC4AB300AFD891 /* ModifyPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F2F2D2AFC4AB300AFD891 /* ModifyPasswordView.swift */; };
 		188BF8692AF84D67004757D5 /* MindFulLearnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BF8682AF84D67004757D5 /* MindFulLearnApp.swift */; };
 		188BF86D2AF84D6A004757D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188BF86C2AF84D6A004757D5 /* Assets.xcassets */; };
 		188BF8702AF84D6A004757D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188BF86F2AF84D6A004757D5 /* Preview Assets.xcassets */; };
@@ -40,9 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1800F34B2AFD20690031C084 /* ModifyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyProfileView.swift; sourceTree = "<group>"; };
 		187F2F172AFAA57900AFD891 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		187F2F192AFAA79300AFD891 /* CodeEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeEmailView.swift; sourceTree = "<group>"; };
 		187F2F1B2AFAA81600AFD891 /* NewPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordView.swift; sourceTree = "<group>"; };
+		187F2F232AFC122000AFD891 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		187F2F292AFC1F2F00AFD891 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		187F2F2D2AFC4AB300AFD891 /* ModifyPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyPasswordView.swift; sourceTree = "<group>"; };
 		188BF8652AF84D67004757D5 /* MindFulLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindFulLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		188BF8682AF84D67004757D5 /* MindFulLearnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindFulLearnApp.swift; sourceTree = "<group>"; };
 		188BF86C2AF84D6A004757D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -164,6 +172,10 @@
 				187F2F172AFAA57900AFD891 /* ForgotPasswordView.swift */,
 				187F2F192AFAA79300AFD891 /* CodeEmailView.swift */,
 				187F2F1B2AFAA81600AFD891 /* NewPasswordView.swift */,
+				187F2F232AFC122000AFD891 /* SettingsView.swift */,
+				187F2F292AFC1F2F00AFD891 /* ProfileView.swift */,
+				187F2F2D2AFC4AB300AFD891 /* ModifyPasswordView.swift */,
+				1800F34B2AFD20690031C084 /* ModifyProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -305,9 +317,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				188BF8962AF8592D004757D5 /* LoginView.swift in Sources */,
+				187F2F2A2AFC1F2F00AFD891 /* ProfileView.swift in Sources */,
+				187F2F242AFC122000AFD891 /* SettingsView.swift in Sources */,
 				188BF8692AF84D67004757D5 /* MindFulLearnApp.swift in Sources */,
 				187F2F1A2AFAA79300AFD891 /* CodeEmailView.swift in Sources */,
+				187F2F2E2AFC4AB300AFD891 /* ModifyPasswordView.swift in Sources */,
 				188BF8982AF85B7E004757D5 /* SigninView.swift in Sources */,
+				1800F34C2AFD20690031C084 /* ModifyProfileView.swift in Sources */,
 				187F2F182AFAA57900AFD891 /* ForgotPasswordView.swift in Sources */,
 				188BF89D2AF862FF004757D5 /* WelcomeView.swift in Sources */,
 				187F2F1C2AFAA81600AFD891 /* NewPasswordView.swift in Sources */,

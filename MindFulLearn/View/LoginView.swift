@@ -5,6 +5,7 @@ struct ContentView: View {
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var isPasswordVisible = false
+    @State private var rememberMe = false
     @State private var appleSignInDelegate: SignInWithAppleDelegate?
 
     var body: some View {
@@ -22,35 +23,41 @@ struct ContentView: View {
                         .foregroundColor(.green)
 
                     HStack {
-                        if isPasswordVisible {
-                            TextField("Password", text: $password)
-                                .padding()
-                                .textFieldStyle(RoundedBorderTextFieldStyle())
-                                .foregroundColor(.green)
-                                .cornerRadius(10)
-                        } else {
-                            SecureField("Password", text: $password)
-                                .padding()
-                                .textFieldStyle(RoundedBorderTextFieldStyle())
-                                .foregroundColor(.green)
-                                .cornerRadius(10)
-                        }
+                        ZStack(alignment: .trailing) {
+                            if isPasswordVisible {
+                                TextField("Password", text: $password)
+                                    .padding()
+                                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                                    .foregroundColor(.green)
+                                    .cornerRadius(10)
+                            } else {
+                                SecureField("Password", text: $password)
+                                    .padding()
+                                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                                    .foregroundColor(.green)
+                                    .cornerRadius(10)
+                            }
 
-                        Button(action: {
-                            // Toggle password visibility
-                            isPasswordVisible.toggle()
-                        }) {
-                            Image(systemName: isPasswordVisible ? "eye.slash" : "eye")
-                                .foregroundColor(.green)
+                            Button(action: {
+                                // Toggle password visibility
+                                isPasswordVisible.toggle()
+                            }) {
+                                Image(systemName: isPasswordVisible ? "eye.slash" : "eye")
+                                    .foregroundColor(.green)
+                                    .padding(.trailing, 10)
+                            }
                         }
-                        .padding(.trailing, 10) // Adjust the padding based on your preference
                     }
+
+                    Toggle("Remember Me", isOn: $rememberMe)
+                        .foregroundColor(.green)
+                        .padding(.leading, 10)
 
                     HStack {
                         Button(action: {
                             // Handle Continue with Email
                         }) {
-                            Text("Login")
+                            Text("Login") 
                                 .foregroundColor(.white)
                                 .bold()
                                 .frame(maxWidth: .infinity)
@@ -70,7 +77,6 @@ struct ContentView: View {
                         }
                     }
 
-                    // Navigate to ForgotPasswordView
                     NavigationLink(destination: ForgotPasswordView()) {
                         Text("Forgot Password?")
                             .foregroundColor(.green)
@@ -87,32 +93,22 @@ struct ContentView: View {
                     HStack {
                         Button(action: {
                             // Redirect to Google Sign In
-                            if let url = URL(string: "https://accounts.google.com/ServiceLogin") {
-                                UIApplication.shared.open(url)
-                            }
                         }) {
-                            Text("Google")
+                            Image("google") // Replace with the actual Google logo
+                                .resizable()
+                                .frame(width: 170, height: 60) // Adjusted size
                                 .foregroundColor(.white)
-                                .bold()
-                                .frame(maxWidth: .infinity)
-                                .padding()
                                 .background(Color.green)
                                 .cornerRadius(10)
                         }
 
                         Button(action: {
                             // Redirect to Apple Sign In
-                            let request = ASAuthorizationAppleIDProvider().createRequest()
-                            appleSignInDelegate = SignInWithAppleDelegate()
-                            let controller = ASAuthorizationController(authorizationRequests: [request])
-                            controller.delegate = appleSignInDelegate
-                            controller.performRequests()
                         }) {
-                            Text("Apple")
+                            Image("apple_logo") // Replace with the actual Apple logo
+                                .resizable()
+                                .frame(width: 170, height: 60) // Adjusted size
                                 .foregroundColor(.white)
-                                .bold()
-                                .frame(maxWidth: .infinity)
-                                .padding()
                                 .background(Color.green)
                                 .cornerRadius(10)
                         }
@@ -120,16 +116,11 @@ struct ContentView: View {
 
                     Button(action: {
                         // Redirect to Facebook Sign In
-                        // Replace "your_facebook_app_id" with your actual Facebook App ID
-                        if let url = URL(string: "https://www.facebook.com/v10.0/dialog/oauth?client_id=your_facebook_app_id&redirect_uri=https://www.facebook.com/connect/login_success.html") {
-                            UIApplication.shared.open(url)
-                        }
                     }) {
-                        Text("Facebook")
+                        Image("facebook_logo") // Replace with the actual Facebook logo
+                            .resizable()
+                            .frame(width: 250, height: 60) // Adjusted size
                             .foregroundColor(.white)
-                            .bold()
-                            .frame(maxWidth: .infinity)
-                            .padding()
                             .background(Color.green)
                             .cornerRadius(10)
                     }
@@ -137,6 +128,7 @@ struct ContentView: View {
             }
             .padding()
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
@@ -148,7 +140,6 @@ struct ContentView_Previews: PreviewProvider {
 
 struct SignUpView: View {
     var body: some View {
-        // Your Sign-Up View here
         Text("Sign Up View")
     }
 }
