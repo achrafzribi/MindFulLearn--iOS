@@ -32,7 +32,7 @@ struct ProfileView: View {
                         .cornerRadius(20) // Increase the button's corner radius for a smoother look
 //                        .shadow(color: Color.gray.opacity(0.5), radius: 5, offset: .bottom) // Add a subtle shadow to the button
                 }
-                .offset(x: 0, y: 20) // Offset the Edit Profile button vertically by 20 points
+                .offset(x: 0, y: -40) // Offset the Edit Profile button vertically by 20 points
                 .padding() // Add padding to the Edit Profile button for better visual separation
             }
             .padding() // Add padding to the entire view for a more spacious feel

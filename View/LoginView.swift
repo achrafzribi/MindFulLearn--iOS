@@ -54,10 +54,8 @@ struct ContentView: View {
                         .padding(.leading, 10)
 
                     HStack {
-                        Button(action: {
-                            // Handle Continue with Email
-                        }) {
-                            Text("Login") 
+                        NavigationLink(destination: SettingsView()) {
+                            Text("Login")
                                 .foregroundColor(.white)
                                 .bold()
                                 .frame(maxWidth: .infinity)
