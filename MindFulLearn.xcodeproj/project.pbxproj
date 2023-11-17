@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1800F34C2AFD20690031C084 /* ModifyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800F34B2AFD20690031C084 /* ModifyProfileView.swift */; };
+		180EB3F32B06F28000336889 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EB3F22B06F28000336889 /* WebService.swift */; };
+		180EB3F52B07006800336889 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EB3F42B07006800336889 /* UserController.swift */; };
+		180EB3FA2B07217500336889 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EB3F92B07217400336889 /* UserData.swift */; };
+		186A9CE12B028925007F7F8C /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A9CE02B028925007F7F8C /* user.swift */; };
+		186A9CE82B04110F007F7F8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A9CE72B04110F007F7F8C /* AppDelegate.swift */; };
 		187F2F182AFAA57900AFD891 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F2F172AFAA57900AFD891 /* ForgotPasswordView.swift */; };
 		187F2F1A2AFAA79300AFD891 /* CodeEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F2F192AFAA79300AFD891 /* CodeEmailView.swift */; };
 		187F2F1C2AFAA81600AFD891 /* NewPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F2F1B2AFAA81600AFD891 /* NewPasswordView.swift */; };
@@ -45,6 +50,11 @@
 
 /* Begin PBXFileReference section */
 		1800F34B2AFD20690031C084 /* ModifyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyProfileView.swift; sourceTree = "<group>"; };
+		180EB3F22B06F28000336889 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		180EB3F42B07006800336889 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		180EB3F92B07217400336889 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		186A9CE02B028925007F7F8C /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
+		186A9CE72B04110F007F7F8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		187F2F172AFAA57900AFD891 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		187F2F192AFAA79300AFD891 /* CodeEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeEmailView.swift; sourceTree = "<group>"; };
 		187F2F1B2AFAA81600AFD891 /* NewPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordView.swift; sourceTree = "<group>"; };
@@ -91,9 +101,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180EB3F12B06F25D00336889 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				180EB3F22B06F28000336889 /* WebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		188BF85C2AF84D67004757D5 = {
 			isa = PBXGroup;
 			children = (
+				180EB3F12B06F25D00336889 /* Services */,
 				188BF8942AF858DF004757D5 /* View */,
 				188BF8932AF858C4004757D5 /* ViewModel */,
 				188BF8922AF858B7004757D5 /* Model */,
@@ -120,6 +139,7 @@
 				188BF8682AF84D67004757D5 /* MindFulLearnApp.swift */,
 				188BF86C2AF84D6A004757D5 /* Assets.xcassets */,
 				188BF86E2AF84D6A004757D5 /* Preview Content */,
+				186A9CE72B04110F007F7F8C /* AppDelegate.swift */,
 			);
 			path = MindFulLearn;
 			sourceTree = "<group>";
@@ -152,6 +172,8 @@
 		188BF8922AF858B7004757D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				186A9CE02B028925007F7F8C /* user.swift */,
+				180EB3F92B07217400336889 /* UserData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,6 +181,7 @@
 		188BF8932AF858C4004757D5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				180EB3F42B07006800336889 /* UserController.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -318,13 +341,18 @@
 			files = (
 				188BF8962AF8592D004757D5 /* LoginView.swift in Sources */,
 				187F2F2A2AFC1F2F00AFD891 /* ProfileView.swift in Sources */,
+				180EB3FA2B07217500336889 /* UserData.swift in Sources */,
 				187F2F242AFC122000AFD891 /* SettingsView.swift in Sources */,
+				180EB3F32B06F28000336889 /* WebService.swift in Sources */,
+				186A9CE82B04110F007F7F8C /* AppDelegate.swift in Sources */,
 				188BF8692AF84D67004757D5 /* MindFulLearnApp.swift in Sources */,
 				187F2F1A2AFAA79300AFD891 /* CodeEmailView.swift in Sources */,
 				187F2F2E2AFC4AB300AFD891 /* ModifyPasswordView.swift in Sources */,
 				188BF8982AF85B7E004757D5 /* SigninView.swift in Sources */,
 				1800F34C2AFD20690031C084 /* ModifyProfileView.swift in Sources */,
+				186A9CE12B028925007F7F8C /* user.swift in Sources */,
 				187F2F182AFAA57900AFD891 /* ForgotPasswordView.swift in Sources */,
+				180EB3F52B07006800336889 /* UserController.swift in Sources */,
 				188BF89D2AF862FF004757D5 /* WelcomeView.swift in Sources */,
 				187F2F1C2AFAA81600AFD891 /* NewPasswordView.swift in Sources */,
 			);

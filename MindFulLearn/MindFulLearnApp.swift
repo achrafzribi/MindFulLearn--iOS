@@ -1,17 +1,14 @@
-//
-//  MindFulLearnApp.swift
-//  MindFulLearn
-//
-//  Created by Achraf Zribi on 5/11/2023.
-//
-
 import SwiftUI
 
 @main
 struct MindFulLearnApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
             WelcomeView()
+                .environmentObject(UserController())
         }
     }
 }
+

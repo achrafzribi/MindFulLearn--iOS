@@ -5,8 +5,9 @@ struct ContentView: View {
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var isPasswordVisible = false
-    @State private var rememberMe = false
-    @State private var appleSignInDelegate: SignInWithAppleDelegate?
+    @State private var showAlert = false
+    @State private var alertMessage = ""
+    @State private var isLoggedIn = false  // Added to track login status
 
     var body: some View {
         NavigationView {
@@ -49,12 +50,16 @@ struct ContentView: View {
                         }
                     }
 
-                    Toggle("Remember Me", isOn: $rememberMe)
-                        .foregroundColor(.green)
-                        .padding(.leading, 10)
-
                     HStack {
-                        NavigationLink(destination: SettingsView()) {
+                        NavigationLink(destination: ProfileView(), isActive: $isLoggedIn) {
+                            EmptyView()
+                        }
+                        .hidden()
+
+                        Button(action: {
+                            // Call the loginUser function
+                            loginUser()
+                        }) {
                             Text("Login")
                                 .foregroundColor(.white)
                                 .bold()
@@ -92,22 +97,22 @@ struct ContentView: View {
                         Button(action: {
                             // Redirect to Google Sign In
                         }) {
-                            Image("google") // Replace with the actual Google logo
+                            Image(systemName: "square.and.arrow.up")
                                 .resizable()
-                                .frame(width: 170, height: 60) // Adjusted size
+                                .frame(width: 40, height: 40)
                                 .foregroundColor(.white)
-                                .background(Color.green)
+                                .background(Color.blue)
                                 .cornerRadius(10)
                         }
 
                         Button(action: {
                             // Redirect to Apple Sign In
                         }) {
-                            Image("apple_logo") // Replace with the actual Apple logo
+                            Image(systemName: "applelogo")
                                 .resizable()
-                                .frame(width: 170, height: 60) // Adjusted size
+                                .frame(width: 40, height: 40)
                                 .foregroundColor(.white)
-                                .background(Color.green)
+                                .background(Color.black)
                                 .cornerRadius(10)
                         }
                     }
@@ -115,18 +120,49 @@ struct ContentView: View {
                     Button(action: {
                         // Redirect to Facebook Sign In
                     }) {
-                        Image("facebook_logo") // Replace with the actual Facebook logo
-                            .resizable()
-                            .frame(width: 250, height: 60) // Adjusted size
+                        Text("f")
+                            .font(.system(size: 40))
                             .foregroundColor(.white)
-                            .background(Color.green)
+                            .frame(width: 40, height: 40)
+                            .background(Color.blue)
                             .cornerRadius(10)
                     }
                 }
             }
             .padding()
+            .alert(isPresented: $showAlert) {
+                Alert(title: Text("Login Failed"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+            }
         }
         .navigationBarBackButtonHidden(true)
+    }
+}
+
+extension ContentView {
+    private func loginUser() {
+        // You'll need to replace the following line with the actual URL for your login API
+        let loginURL = "http://localhost:3000/api/user/login"
+        
+        // Check if email and password are not empty
+        guard !email.isEmpty, !password.isEmpty else {
+            showAlert(message: "Email and password are required.")
+            return
+        }
+
+        // Make your login request
+        Webservice().loginUser(email: email, password: password) { success in
+            if success {
+                // Set isLoggedIn to true to activate the NavigationLink
+                isLoggedIn = true
+            } else {
+                showAlert(message: "Login failed. Please check your credentials and try again.")
+            }
+        }
+    }
+
+    private func showAlert(message: String) {
+        alertMessage = message
+        showAlert = true
     }
 }
 

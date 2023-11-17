@@ -2,15 +2,13 @@ import SwiftUI
 
 struct SettingsView: View {
     @State private var notificationsEnabled = true
-    @State private var darkModeEnabled = false
+    @AppStorage("darkModeEnabled") private var darkModeEnabled = false
     @State private var selectedFontSizeIndex = 1
-    @State private var selectedThemeIndex = 0
     @State private var language = "English"
     @State private var editProfile = false
     @State private var changePassword = false
 
     let fontSizeOptions = ["Small", "Medium", "Large"]
-    let themeOptions = ["Light", "Dark"]
     let languageOptions = ["English", "Spanish", "French"]
 
     var body: some View {
@@ -74,6 +72,7 @@ struct SettingsView: View {
                 }
             }
             .navigationBarTitle("Settings")
+            .preferredColorScheme(darkModeEnabled ? .dark : .light) // Set preferred color scheme
             .tabItem {
                 Image(systemName: "house.fill")
                 Text("Home")
