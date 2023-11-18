@@ -70,7 +70,7 @@ class Webservice {
     
     func showUser(completion: @escaping (UserData?) -> ()) {
             // Replace the URL with the actual endpoint to fetch user details
-            guard let url = URL(string: "http://localhost:3000/api/user/:id") else {
+            guard let url = URL(string: "http://localhost:3000/api/user/_id") else {
                 completion(nil)
                 return
             }

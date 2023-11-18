@@ -13,6 +13,9 @@ struct ProfileView: View {
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.green, lineWidth: 5)) // Add a green border around the image
                     .padding() // Add padding around the image for better visual separation
+                    .onAppear {
+                        
+                    }
 
                 Text("Achraf")
                     .font(.system(size: 32)) // Use a larger font size for the name
@@ -86,6 +89,15 @@ struct BasicInfoView: View {
     }
 }
 
+extension ProfileView {
+    private func fetchData() async throws -> UserData {
+        let url = URL(string: "http://localhost:3000/api/user/_id")! // Replace with your API endpoint
+        let (data, _) = try await URLSession.shared.data(from: url)
+        let decodedData = try JSONDecoder().decode(UserData.self, from: data)
+        return decodedData
+    }
+}
+
 struct editProfileView: View {
     var body: some View {
         Text("Edit Profile View")
@@ -99,5 +111,10 @@ struct ProfileView_Previews: PreviewProvider {
             ProfileView()
         }
     }
+    
+    
 }
+
+
+
 
