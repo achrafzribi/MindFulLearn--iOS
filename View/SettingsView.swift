@@ -7,6 +7,8 @@ struct SettingsView: View {
     @State private var language = "English"
     @State private var editProfile = false
     @State private var changePassword = false
+    @State private var locationEnabled = false
+    @State private var mailConfirmationEnabled = true
 
     let fontSizeOptions = ["Small", "Medium", "Large"]
     let languageOptions = ["English", "Spanish", "French"]
@@ -42,7 +44,7 @@ struct SettingsView: View {
 
                 Section(header: Text("Preferences")) {
                     Toggle("Enable Notifications", isOn: $notificationsEnabled)
-                    
+
                     Toggle("Dark Mode", isOn: $darkModeEnabled)
                         .onChange(of: darkModeEnabled, perform: { value in
                             adjustColorScheme()
@@ -57,6 +59,28 @@ struct SettingsView: View {
                     Picker("Language", selection: $language) {
                         ForEach(languageOptions, id: \.self) {
                             Text($0)
+                        }
+                    }
+                }
+
+                Section(header: Text("Location")) {
+                    Toggle("Enable Location", isOn: $locationEnabled)
+                }
+
+                Section(header: Text("Security")) {
+                    Toggle("Mail Confirmation", isOn: $mailConfirmationEnabled)
+                }
+
+                Section(header: Text("Account")) {
+                    Button(action: {
+                        // Implement your logic to delete the account
+                        // You can show an alert or navigate to a confirmation screen
+                    }) {
+                        HStack {
+                            Image(systemName: "trash.fill")
+                                .foregroundColor(.red)
+                            Text("Delete Account")
+                                .foregroundColor(.red)
                         }
                     }
                 }
