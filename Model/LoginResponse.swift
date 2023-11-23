@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LoginResponse: Codable {
-    let _id: String
+struct DELETE: Codable {
+    let userId: String
     // Include any other properties you receive in the login response
 }

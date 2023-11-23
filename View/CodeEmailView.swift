@@ -1,8 +1,9 @@
 import SwiftUI
-
+import Alamofire
 struct EnterCodeView: View {
     @State private var verificationCode: String = ""
-
+    var email : String
+    @State   var varcode : String = ""
     var body: some View {
         VStack {
             Text("Enter Verification Code")
@@ -16,16 +17,16 @@ struct EnterCodeView: View {
                 .foregroundColor(.green)
 
             
-                
-            NavigationLink(destination: NewPasswordView())   {
-                Text("Confirm Code")}
-                    .foregroundColor(.white)
-                    .bold()
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color.green)
-                    .cornerRadius(10)
-            
+            if(verificationCode == varcode){
+                NavigationLink(destination: NewPasswordView(email : email))   {
+                    Text("Confirm Code")}
+                .foregroundColor(.white)
+                .bold()
+                .frame(maxWidth: .infinity)
+                .padding()
+                .background(Color.green)
+                .cornerRadius(10)
+            }
 
             Spacer()
 
@@ -35,14 +36,32 @@ struct EnterCodeView: View {
                 .padding()
 
             Spacer()
+        }.onAppear{
+            print("test"+email)
+            sendForgotPasswordRequest()
         }
         .padding()
     }
+    func sendForgotPasswordRequest() {
+        print("test"+email)
+       let apiUrl = "http://localhost:3000/api/user/forgotpassword/sendcode"
+       let parameters = ["email": email]
+     
+       AF.request(apiUrl, method: .post, parameters: parameters, encoding: JSONEncoding.default)
+           .responseJSON { response in
+               switch response.result {
+               case .success(let value):
+                   print("API Success: \(value)")
+                   self.varcode = value as! String
+                   // Handle the success response here
+               case .failure(let error):
+                   print("API Failure: \(error)")
+                   // Handle the error here
+               }
+           }
+   }
 }
 
-struct EnterCodeView_Previews: PreviewProvider {
-    static var previews: some View {
-        EnterCodeView()
-    }
-}
+
+
 

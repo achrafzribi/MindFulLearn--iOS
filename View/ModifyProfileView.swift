@@ -1,38 +1,63 @@
 import SwiftUI
 
 struct ModifyProfileView: View {
-    @StateObject var profileViewModel = ProfileViewModel()
+    @EnvironmentObject var user: Userviewmodel
+    @StateObject var nameViewModel = ProfileViewModel()
+
+        
+
+       
+
+
+   
     
     var body: some View {
         NavigationView {
-            Form {
-                Section(header: Text("Profile Information")) {
-                    TextField("Name", text: $profileViewModel.name)
-                    TextField("Gender", text: $profileViewModel.gender)
-                    TextField("Email", text: $profileViewModel.email)
-                    TextField("Location", text: $profileViewModel.location)
-                }
+            
+            VStack{
+                TextField("Name", text: $nameViewModel.firstname)
+                TextField("Name", text: $nameViewModel.lastname)
+                TextField("Name", text: $nameViewModel.email)
+                TextField("Name", text: $nameViewModel.dateOfbirth)
+                //TextField("Name", text: $nameViewModel.)
+                
                 
                 Section {
                     Button(action: {
+                        user.user?.firstname = nameViewModel.firstname
+                        user.user?.lastname = nameViewModel.lastname
+                        user.user?.email = nameViewModel.email
+                        user.user?.dateOfBirth = nameViewModel.dateOfbirth
+                        updateUser(user: user.user!)
+                            { success in
+                                print(success)
+                        }
                         // Add logic to update the profile
-                        profileViewModel.updateProfile()
+                      
                     }) {
                         Text("Save Changes")
                     }
+                }.onAppear{
+                    nameViewModel.firstname = user.user!.firstname!
+                    nameViewModel.lastname = user.user!.lastname!
+                    nameViewModel.email = user.user!.email!
+                    nameViewModel.role = user.user!.role!
+                    nameViewModel.dateOfbirth = user.user!.dateOfBirth!
                 }
             }
-            .navigationBarTitle("Modify Profile")
-        }
+            
+        }.navigationBarTitle("Modify Profile")
     }
 }
 
 class ProfileViewModel: ObservableObject {
-    @Published var name: String = ""
+    var firstname: String = ""
     @Published var gender: String = ""
     @Published var email: String = ""
     @Published var location: String = ""
-    
+    @Published var dateOfbirth : String = ""
+    @Published var role : String = ""
+    @Published var lastname : String = ""
     // Add necessary methods for updating the profile
     func updateProfile() {
         // Add logic to update the profile using the entered values

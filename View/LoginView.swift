@@ -8,7 +8,8 @@ struct ContentView: View {
     @State private var showAlert = false
     @State private var alertMessage = ""
     @State private var isLoggedIn = false  // Added to track login status
-
+    @EnvironmentObject var user : Userviewmodel
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -51,7 +52,7 @@ struct ContentView: View {
                     }
 
                     HStack {
-                        NavigationLink(destination: ProfileView(), isActive: $isLoggedIn) {
+                        NavigationLink(destination: SettingsView(), isActive: $isLoggedIn) {
                             EmptyView()
                         }
                         .hidden()
@@ -135,6 +136,7 @@ struct ContentView: View {
             }
         }
         .navigationBarBackButtonHidden(true)
+        
     }
 }
 
@@ -151,8 +153,9 @@ extension ContentView {
 
         // Make your login request
         Webservice().loginUser(email: email, password: password) { success in
-            if success {
+            if success is UserData {
                 // Set isLoggedIn to true to activate the NavigationLink
+                user.user = success
                 isLoggedIn = true
             } else {
                 showAlert(message: "Login failed. Please check your credentials and try again.")

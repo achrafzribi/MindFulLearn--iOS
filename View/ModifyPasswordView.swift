@@ -4,7 +4,7 @@ struct ModifyPasswordView: View {
     @State private var oldPassword = ""
     @State private var newPassword = ""
     @State private var confirmPassword = ""
-
+  
     var body: some View {
         NavigationView {
             ScrollView {

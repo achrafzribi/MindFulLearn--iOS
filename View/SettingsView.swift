@@ -67,14 +67,9 @@ struct SettingsView: View {
                     Toggle("Enable Location", isOn: $locationEnabled)
                 }
 
-                Section(header: Text("Security")) {
-                    Toggle("Mail Confirmation", isOn: $mailConfirmationEnabled)
-                }
-
                 Section(header: Text("Account")) {
                     Button(action: {
-                        // Implement your logic to delete the account
-                        // You can show an alert or navigate to a confirmation screen
+                       
                     }) {
                         HStack {
                             Image(systemName: "trash.fill")
@@ -84,6 +79,7 @@ struct SettingsView: View {
                         }
                     }
                 }
+
 
                 Section {
                     NavigationLink(destination: ContentView()) {
@@ -130,7 +126,10 @@ struct SettingsView: View {
             .padding()
             .edgesIgnoringSafeArea(.bottom)
         )
+        .navigationBarBackButtonHidden(true)
+
     }
+    
 
     private func adjustColorScheme() {
         if darkModeEnabled {
@@ -138,8 +137,11 @@ struct SettingsView: View {
         } else {
             UIApplication.shared.windows.first?.rootViewController?.overrideUserInterfaceStyle = .light
         }
+        
     }
+    
 }
+
 
 struct EditProfileView: View {
     var body: some View {

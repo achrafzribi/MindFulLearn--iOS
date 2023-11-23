@@ -1,4 +1,5 @@
 import SwiftUI
+import Alamofire
 
 struct ForgotPasswordView: View {
     @State private var email: String = ""
@@ -14,15 +15,18 @@ struct ForgotPasswordView: View {
                 .padding()
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .foregroundColor(.green)
-
-            NavigationLink(destination: EnterCodeView ()) {
-                Text("Send Code")}
-                    .foregroundColor(.white)
-                    .bold()
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color.green)
-                    .cornerRadius(10)
+            
+            
+          
+                NavigationLink(
+                    destination: EnterCodeView(email : email),
+                                    label: {
+                   Text("send")
+                    
+                
+              
+                
+            })
             
 
             Spacer()
@@ -36,11 +40,7 @@ struct ForgotPasswordView: View {
         }
         .padding()
     }
-}
 
-struct ForgotPasswordView_Previews: PreviewProvider {
-    static var previews: some View {
-        ForgotPasswordView()
-    }
+    
 }
 
