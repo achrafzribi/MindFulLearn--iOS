@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "222C5C27-CA90-4039-A023-31F28A3F4844"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5DCAA1F4-8BD8-42B2-8F90-7CBA8362BE08"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "modulecoachingpriv/Service/Message.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6643D3CD-9C15-4244-8D85-C262A173ED24"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "modulecoachingpriv/Core/Home/Views/videocallview.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "videocallview"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "6643D3CD-9C15-4244-8D85-C262A173ED24 - cadd2b68f96d9acc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "modulecoachingpriv.videocallview.webRTCClient.getter : modulecoachingpriv.WebRTCClient"
+                  moduleName = "modulecoachingpriv"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amanimetoui/Downloads/modulecoachingpriv/modulecoachingpriv/Core/Home/Views/videocallview.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "6643D3CD-9C15-4244-8D85-C262A173ED24 - 459f2a470cef21e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "modulecoachingpriv.videocallview.$webRTCClient.getter : SwiftUI.EnvironmentObject&lt;modulecoachingpriv.WebRTCClient&gt;.Wrapper"
+                  moduleName = "modulecoachingpriv"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amanimetoui/Downloads/modulecoachingpriv/modulecoachingpriv/Core/Home/Views/videocallview.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "6643D3CD-9C15-4244-8D85-C262A173ED24 - a273a2e519acb103"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 0 of modulecoachingpriv.videocallview.init(webRTCClient: SwiftUI.EnvironmentObject&lt;modulecoachingpriv.WebRTCClient&gt;) -&gt; modulecoachingpriv.videocallview"
+                  moduleName = "modulecoachingpriv"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amanimetoui/Downloads/modulecoachingpriv/modulecoachingpriv/Core/Home/Views/videocallview.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "6643D3CD-9C15-4244-8D85-C262A173ED24 - 1965a6a554e27f60"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "modulecoachingpriv.videocallview.presentationMode.getter : SwiftUI.Binding&lt;SwiftUI.PresentationMode&gt;"
+                  moduleName = "modulecoachingpriv"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amanimetoui/Downloads/modulecoachingpriv/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "6643D3CD-9C15-4244-8D85-C262A173ED24 - aea587be720c8289"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "modulecoachingpriv.videocallview.init(webRTCClient: modulecoachingpriv.WebRTCClient) -&gt; modulecoachingpriv.videocallview"
+                  moduleName = "modulecoachingpriv"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amanimetoui/Downloads/modulecoachingpriv/modulecoachingpriv/Core/Home/Views/videocallview.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "6643D3CD-9C15-4244-8D85-C262A173ED24 - 758f88a5780e95dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "modulecoachingpriv.videocallview.init(webRTCClient: modulecoachingpriv.WebRTCClient, signalClient: modulecoachingpriv.SignalingClient) -&gt; modulecoachingpriv.videocallview"
+                  moduleName = "modulecoachingpriv"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amanimetoui/Downloads/modulecoachingpriv/modulecoachingpriv/Core/Home/Views/videocallview.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "144">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
